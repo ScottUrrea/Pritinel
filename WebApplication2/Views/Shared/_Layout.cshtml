@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Pritinel</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/Content/img/Pritinel.png" rel="icon">
+    @*<link href="~/Content/img/apple-touch-icon.png" rel="apple-touch-icon">*@
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/Content/FormularioHome/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/FormularioHome/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/Content/FormularioHome/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/Content/FormularioHome/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/Content/FormularioHome/venobox/venobox.css" rel="stylesheet">
+    <link href="~/Content/FormularioHome/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/Content/FormularioHome/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/Content/css/styleHome.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo mr-auto"><a href="index.html"> </a></h1>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#team">Equipo</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li class="drop-down">
+                        <a href="#">Mi Pritinel</a>
+                        <ul>
+                            <li>@Html.ActionLink("Iniciar Sesion", "InicioSesion", "Login")</li>
+                            <li>@Html.ActionLink("Registro", "Registrar", "Login")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+    @RenderBody()
+
+    <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="~/Content/FormularioHome/jquery/jquery.min.js"></script>
+    <script src="~/Content/FormularioHome/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/FormularioHome/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/Content/FormularioHome/php-email-form/validate.js"></script>
+    <script src="~/Content/FormularioHome/waypoints/jquery.waypoints.min.js"></script>
+    <script src="~/Content/FormularioHome/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/Content/FormularioHome/venobox/venobox.min.js"></script>
+    <script src="~/Content/FormularioHome/owl.carousel/owl.carousel.min.js"></script>
+    <script src="~/Content/FormularioHome/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/Content/js/main.js"></script>
+
+</body>
+
+</html>
